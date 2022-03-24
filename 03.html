@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title></title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+<!-- Навигация  -->
+  
+<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="#!">1</a></li>
+  <li><a href="#!">2</a></li>
+  <li class="divider"></li>
+  <li><a href="#!">3</a></li>
+</ul>
+<nav>
+  <div class="nav-wrapper blue lighten-3">
+        <img class="responsive-img" src="images/logo_optimised_white.png">
+    <ul class="right hide-on-med-and-down">
+      <li><a href="badges.html">Информация</a></li>
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Ссылки<i class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
+  </div>
+</nav>
+        
+
+<!-- Параллакс  -->
+
+<!-- Секция с картой - точнее, ссылками на них  -->
+  <div class="section no-pad-bot" id="index-banner">
+      <div class="col s6">
+      <h3 class="row center">ИНТЕРАКТИВНАЯ КАРТА С РАСЧЁТАМИ КЛИМАТИЧЕСКИХ ДАННЫХ</h3>
+          <div class="row center">
+      <iframe src="qgis3/index.html" width="600" height="450" frameborder="0"></iframe>
+    </div>
+  </div>
+    </div>
+
+<!--   -->
+  <div class="parallax-container">
+    <div class="parallax"><img src="images/background.jpg"></div>
+  </div>
+
+<!-- Параллакс  -->
+  <div class="parallax-container">
+    <div class="parallax"><img src=""></div>
+  </div>
+
+<!-- Футер -->
+  <footer class="page-footer grey darken-2">
+    <div class="container">
+      <div class="row">
+        <div class="col l3 s12">
+          <h5 class="white-text">КОНТАКТНАЯ ИНФОРМАЦИЯ</h5>
+          <ul>
+            <li class="white-text"></li>
+            <li class="white-text"></li>
+            <li class="white-text"></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-copyright">
+      <div class="container">
+      © 2022, команда ,,Кванториум", трек №1
+      </div>
+    </div>
+  </footer>
+
+  <!--  JS -->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  <script type="text/javascript">
+      //Material Box, который используем для отображения.
+    $(document).ready(function(){
+      $('.materialboxed').materialbox();
+    });
+      $(".dropdown-trigger").dropdown();
+        
+
+    //Параллакс, который используем в качестве разделения сайта на блоки.
+    $(document).ready(function(){
+      $('.parallax').parallax();
+    });
+      $(function() {
+    $("#" + $(".radio:checked").val()).show();
+    $(".radio").change(function(){
+        $(".radio-blocks").hide();
+        $("#" + $(this).val()).show();
+    });
+});
+  </script>
+
+  </body>
+</html>

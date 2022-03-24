@@ -13,23 +13,42 @@
 
 <body>
 <!-- Навигация  -->
-  <nav class="indigo darken-4">
-    <div class="nav-wrapper">
-      <h5 class="brand-logo center" font-family: 'helvetica'>Изменение климата по РС/Я/</h5>
-    </div>
-  </nav>
+  
+<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="#!">1</a></li>
+  <li><a href="#!">2</a></li>
+  <li class="divider"></li>
+  <li><a href="#!">3</a></li>
+</ul>
+<nav>
+  <div class="nav-wrapper blue lighten-3">
+        <img class="responsive-img" src="images/logo_optimised_white.png">
+    <ul class="right hide-on-med-and-down">
+      <li><a href="badges.html">Информация</a></li>
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Ссылки<i class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
+  </div>
+</nav>
+        
 
 <!-- Параллакс  -->
   <div class="parallax-container">
     <div class="parallax"><img src="images/background.png"></div>
   </div>
 
-<!-- Секция с картой  -->
+<!-- Секция с картой - точнее, ссылками на них  -->
   <div class="section no-pad-bot" id="index-banner">
-    <div class="row center">
-        <img src="images/11.png"></img>
-      </div>
-      <br><br>
+      <div class="col s6">
+      <h3 class="row center">ИНТЕРАКТИВНАЯ КАРТА С РАСЧЁТАМИ КЛИМАТИЧЕСКИХ ДАННЫХ</h3>
+          <div class="row center">
+      <a class="waves-effect waves-light blue darken-4 lighten-5 btn" href="01.html">2021-2040</a>
+      <a class="waves-effect waves-light blue accent-1 btn" href="02.html">2041-2060</a>
+      <a class="waves-effect waves-light cyan lighten-2 btn" href="03.html">2061-2080</a>
+      <a class="waves-effect waves-light cyan btn" href="04.html">2081-2100</a>
+    </div>
+  </div>
     </div>
   </div>
 
@@ -43,25 +62,27 @@
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center yellow-text"><i class="material-icons">tag_faces</i></h2>
-            <h5 class="center">Пункт 1</h5>
-            <p class="light">Здесь будет базовая информация. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non pretium orci. Sed erat nisl, malesuada vitae finibus a, faucibus a tortor. Mauris ornare, felis eu fringilla gravida, dolor justo volutpat odio, et accumsan augue eros at nulla.</p>
+            <h2 class="center indigo-text"><i class="material-icons">hot_tub</i></h2>
+            <h5 class="center">ГЛОБАЛЬНОЕ ПОТЕПЛЕНИЕ</h5>
+            <p class="light">
+                Здесь базовая информация. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non pretium orci. Sed erat nisl, malesuada vitae finibus a, faucibus a tortor. Mauris ornare, felis eu fringilla gravida, dolor justo volutpat odio, et accumsan augue eros at nulla.</p>
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center indigo-text"><i class="material-icons">airplay</i></h2>
-            <h5 class="center">Пункт 2</h5>
-            <p class="light">Здесь будет информация для целевой аудитории. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non pretium orci. Sed erat nisl, malesuada vitae finibus a, faucibus a tortor. Mauris ornare, felis eu fringilla gravida, dolor justo volutpat odio, et accumsan augue eros at nulla.</p>
+            <h2 class="center indigo-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">ЗАИНТЕРЕСОВАННЫМ ОРГАНИЗАЦИЯМ</h5>
+            <p class="light">Здесь информация для целевой аудитории. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non pretium orci. Sed erat nisl, malesuada vitae finibus a, faucibus a tortor. Mauris ornare, felis eu fringilla gravida, dolor justo volutpat odio, et accumsan augue eros at nulla.</p>
           </div>
         </div>
         
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center red-text"><i class="material-icons">thumb_up</i></h2>
-            <h5 class="center">Пункт 3</h5>
-            <p class="light">Здесь будет информация, какие данные использованы, какие промежутки времени. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non pretium orci. Sed erat nisl, malesuada vitae finibus a, faucibus a tortor. Mauris ornare, felis eu fringilla gravida, dolor justo volutpat odio, et accumsan augue eros at nulla.</p>
+            <h2 class="center indigo-text"><i class="material-icons">view_headline</i></h2>
+            <h5 class="center">ДАННЫЕ</h5>
+            <p class="light">
+                Здесь информация, какие данные использованы, какие промежутки времени. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non pretium orci. Sed erat nisl, malesuada vitae finibus a, faucibus a tortor. Mauris ornare, felis eu fringilla gravida, dolor justo volutpat odio, et accumsan augue eros at nulla.</p>
           </div>
         </div>
       </div>
@@ -75,7 +96,18 @@
     <div class="parallax"><img src="images/background.jpg"></div>
   </div>
 
-<!--  -->
+<!-- <input type="checkbox" id="side-checkbox" />
+<div class="side-panel">
+	<label class="side-button-2" for="side-checkbox">+</label>	
+	<div class="side-title">Выдвижная панель:</div>
+	<p>Информация в панеле</p>
+</div>
+<div class="side-button-1-wr">
+	<label class="side-button-1" for="side-checkbox">
+		<div class="side-b side-open">Открыть</div>
+		<div class="side-b side-close">Закрыть</div>
+	</label> parallax-1 div style="50050 margin-2"
+</div> -->
 
 
 
@@ -120,11 +152,11 @@
     </div>
   </div>
 
-<!-- Моб. приложение  -->
+<!-- М--  -->
   <div class="row center">
     <h5 class="header col s12 light">---</h5>
   </div>
-<!-- Укажите скриншот сайта и ссылку на моб. приложение. Чтобы изображение было ссылкой -->
+<!-- Укажите скриншот и ссылку на доп.возможности -->
   <div class="row container">
     <div class="col s6">
       <div class="card">
@@ -133,7 +165,7 @@
         </div>
       </div>
     </div>
-<!-- Описание моб. приложения в упорядоченном списке. В кнопке укажите ссылку на приложение -->
+<!-- Описание упорядоченном списке. В кнопке ссылка -->
     <div class="col s6">
       <ol>
         ---------------
@@ -142,11 +174,11 @@
     </div>
   </div>
 
-<!-- Игра  -->
+<!-- ---  -->
   <div class="row center">
-    <h5 class="header col s12 light">jjjА</h5>
+    <h5 class="header col s12 light">---</h5>
   </div>
-<!-- Укажите видео процесса прохождения игры. -->
+<!--. -->
   <div class="row container">
     <div class="col s6">
       <div class="card">
@@ -198,15 +230,24 @@
   <script src="js/init.js"></script>
 
   <script type="text/javascript">
-      //Material Box, который используем для отображения вашей фотографии.
+      //Material Box, который используем для отображения.
     $(document).ready(function(){
       $('.materialboxed').materialbox();
     });
+      $(".dropdown-trigger").dropdown();
+        
 
     //Параллакс, который используем в качестве разделения сайта на блоки.
     $(document).ready(function(){
       $('.parallax').parallax();
     });
+      $(function() {
+    $("#" + $(".radio:checked").val()).show();
+    $(".radio").change(function(){
+        $(".radio-blocks").hide();
+        $("#" + $(this).val()).show();
+    });
+});
   </script>
 
   </body>
